@@ -1,0 +1,417 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+text-decoration: none;
+list-style: none;
+}
+
+
+a, a:visited, a:hover, a:active {
+text-decoration: none;
+}
+
+.merriweather-light {
+font-family: "Merriweather", serif;
+font-weight: 300;
+}
+
+.merriweather-regular {
+font-family: "Merriweather", serif;
+font-weight: 400;
+}
+
+.merriweather-bold {
+font-family: "Merriweather", serif;
+font-weight: 700;
+}
+
+.merriweather-black {
+font-family: "Merriweather", serif;
+font-weight: 900;
+}
+
+.merriweather-light-italic {
+font-family: "Merriweather", serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.merriweather-regular-italic {
+font-family: "Merriweather", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.merriweather-bold-italic {
+font-family: "Merriweather", serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.merriweather-black-italic {
+font-family: "Merriweather", serif;
+font-weight: 900;
+font-style: italic;
+}
+
+.open-sans {
+font-family: "Open Sans", serif;
+font-optical-sizing: auto;
+font-weight: normal; 
+font-style: normal;
+font-variation-settings: "wdth" 100;
+}
+
+.lemon-regular {
+font-family: "Lemon", serif;
+font-weight: 400;
+}
+
+:root {
+--bgcolor: #000000;
+--text-color: #FFF;
+--other-color: #e56502;
+--second-color: #463F3F;
+--h1-font: 5rem;
+--h2-font: 3.2rem;
+--p-font: 1.1rem;
+}
+
+header {
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+z-index: 1000;
+padding: 32px 13%;
+display: flex;
+justify-content: space-between;
+transition: all 0.5s ease;
+text-decoration: none;
+}
+
+body {
+background-color: var(--bgcolor);
+color: var(--text-color);
+font-family: "Merriweather", serif; 
+}
+
+.logo {
+color: var(--text-color);
+font-family: "Lemon", serif;
+font-size: 36px;
+font-weight: 700;
+}
+
+.navlist {
+display: flex;
+}
+
+.navlist a {
+font-size: var(--p-font);
+font-weight: 500;
+color: var(--text-color);
+margin: 0 30px;
+transition: all 0.6s ease;
+}
+
+.navlist a:hover {
+color: var(--second-color);
+transform: translateY(-5px);
+}
+
+.nav-right {
+display: flex;
+align-items: center;
+}
+
+.nav-btn {
+display: inline-block;
+padding: 14px 35px;
+background: var(--other-color);
+color: var(--text-color);
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.05em; 
+border-radius: 30px;
+border: 2px solid transparent;
+transition: all 0.6s ease;
+}
+
+.nav-btn:hover {
+background: transparent;
+border: 2px solid var(--other-color);
+}
+
+#menu-icon {
+font-size: 40px;
+cursor: pointer;
+z-index: 10001;
+margin-left: 22px;
+display: none;
+}
+
+section {
+padding: 90px 13% 80px;
+}
+
+.hero {
+height: 100vh;
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-between;
+gap: 3rem;
+}
+
+.hero-img {
+max-width: 600px;
+height: auto; 
+object-fit: contain;
+}
+
+.hero-text h1 {
+font-size: var(--h1-font);
+line-height: 1.1;
+font-weight: 700;
+margin: 20px 0;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-shadow: -1px -1px 0px #000, 7px 7px 0px #000, 9px 9px 0px #00000055;
+}
+
+.hero-text h1 span {
+color: var(--other-color);
+}
+
+img {
+width: 400px;
+height: 500px;
+}
+
+.hero-text h6 {
+font-size: 22px;
+font-weight: 600;
+}
+
+.hero-text h6 span {
+color: var(--other-color);
+}
+
+.hero-text h4 {
+font-family: "Merriweather", serif;
+font-weight: 700;
+font-size: 35px;
+margin-bottom: 30px;
+}
+
+.hero-text p {
+font-size: var(--p-font);
+color: var(--text-color);
+margin-bottom: 20px;
+line-height: 2;
+}
+
+.btn {
+display: inline-block;
+padding: 15px 30px;
+background: transparent;
+color: var(--text-color);
+font-size: 15px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.05em; 
+border: 2px solid var(--other-color);
+box-shadow: 2px 2px var(--other-color);
+transition: all 0.6s ease;
+margin-right: 30px;
+}
+
+.btn:hover {
+background: var(--other-color);
+color: var(--text-color);
+}
+
+.btn2 {
+display: inline-block;
+color: var(--text-color);
+font-size: 17px;
+font-weight: 700;
+text-transform: uppercase;
+border-radius: 2px; 
+letter-spacing: 0.05em;
+transition: all 0.6s ease;
+}
+
+.btn2:hover {
+border-bottom: 2px solid var(--text-color);
+}
+
+.header {
+background-color: var(--text-color);
+padding: 20px;
+text-align: center;
+}
+
+.header h1 {
+margin: 0;
+font-size: 2em;
+font-family: "Merriweather", serif;
+}
+
+.container {
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+.hobby {
+background-color: var(--text-color);
+margin: 10px;
+padding: 20px;
+width: 300px;
+text-align: center;
+}
+
+.hobby img {
+max-width: 100%;
+height: auto;
+}
+
+.hobby p {
+font-size: 1em;
+color: var(--text-color);
+}
+.section {
+padding: 20px;
+text-align: center;
+}
+
+.section h2 {
+background-color: var(--second-color);
+padding: 10px;
+margin: 0;
+}
+
+.section-content {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+padding: 20px 0;
+}
+
+.card {
+background-color: var(--second-color);
+padding: 20px;
+width: 500px;
+text-align: center;
+color: var(--text-color);
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.skills {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px 0;
+}
+
+.skills img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background-color: var(--other-color);
+padding: 10px;
+}
+
+.contact {
+text-align: center;
+padding: 20px;
+}
+
+.contact h2 {
+margin: 0;
+}
+
+.contact-icons {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px 0;
+}
+
+.icon-container {
+display: flex;
+gap: 20px;
+}
+
+.icon {
+width: 100px;
+height: 100px;
+background-color: var(--other-color);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon img {
+width: 60%;
+height: 60%;
+}
+
+.social-media {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.social-icon {
+text-decoration: none;
+padding: 10px;
+margin: 0 10px;
+color: white;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.facebook {
+background-color: #3b5998;
+}
+
+.X {
+background-color: var(--second-color);
+}
+
+.instagram {
+background-color: #e1306c;
+}
+
+.social-icon:hover {
+opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobby {
+    width: 90%;
+}
+}
+@media (max-width: 600px) {
+.section-content,
+.skills {
+    flex-direction: column;
+}
+}
